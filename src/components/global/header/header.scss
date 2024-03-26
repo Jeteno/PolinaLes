@@ -1,0 +1,12 @@
+.header__body {
+   align-items: center;
+}
+.header__container {
+   padding: 50px 0;
+   @media screen and (max-width: 1140px) {
+      padding: 35px 0;
+   }
+   @media screen and (max-width: 500px) {
+      padding: 18px 0 17px;
+   }
+}

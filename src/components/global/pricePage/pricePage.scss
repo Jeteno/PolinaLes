@@ -1,0 +1,196 @@
+@import '../../../styles/variables.scss';
+.price__body {
+   position: relative;
+}
+.price__title {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   gap: 4px;
+   width: 100%;
+}
+.price__cards {
+   .price__card:last-of-type {
+      display: none;
+      @media screen and (max-width: 1024px) {
+        display: flex;
+      }
+      @media screen and (max-width: 570px) {
+         display: none;
+      }
+   }
+   @media screen and (max-width: 1140px) {
+      .price__card {
+         &:nth-child(1) {
+            .price__title {
+               width: 103%; 
+            }  
+         }
+      }
+   }
+   @media screen and (max-width: 570px) {
+      .price__card {
+         &:nth-child(1) {
+            .price__title {
+               width: 100%; 
+            }  
+         }
+      }
+   }
+}
+.price__card {
+   border-radius: 30px;
+   background: rgba(252, 229, 221, 0.8);
+   padding: 50px 42px;
+   flex-direction: column;
+   flex: 1 1 30%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+   border-radius: 30px;
+   @media screen and (max-width: 1900px) {
+      padding: 30px 25px;
+   }
+   @media screen and (max-width: 1024px) {
+      padding: 20px 18px;
+      flex: 1 1 48%;
+   }
+   @media screen and (max-width: 570px) {
+      padding: 20px;
+      gap: 10px;
+      flex: 1 1 auto;
+   }
+   @media screen and (max-width: 280px) {
+      padding: 15px;
+   }
+}
+.price__images {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.price__title-h {
+   color: rgb(148, 80, 77);
+   @include adaptiveFont(35, 12); 
+   font-weight: 600;
+   line-height: 49px;
+   letter-spacing: 0%;
+   text-align: left;
+   @media screen and (max-width: 1140px) {
+      font-size: 24px;
+      line-height: 33.6px;
+   }
+   @media screen and (max-width: 570px) {
+      font-size: 19px;
+   }
+   @media screen and (max-width: 280px) {
+      font-size: 16px;
+   }
+}
+.price__title-span {
+   color: rgb(148, 80, 77);
+   @include adaptiveFont(25, 12); 
+   font-weight: 400;
+   line-height: 140%;
+   letter-spacing: 0%;
+   text-align: left;
+   padding-bottom: 5px;
+   @media screen and (max-width: 1140px) {
+      font-size: 14px;
+   }
+   @media screen and (max-width: 570px) {
+      font-size: 12px;
+      padding-bottom: 7px;
+   }
+}
+.price__content {
+   width: 100%;
+}
+.price__row {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   &:not(:last-child) {
+      border-bottom: 1px solid rgb(228, 181, 165);
+      padding: 20px 0;
+   }
+   &:first-child {
+      padding: 0 0 20px 0;
+   }
+   &:last-child {
+      padding-top: 20px;
+   }
+   @media screen and (max-width: 570px) {
+      &:not(:last-child) {
+         padding: 10px 0;
+      }
+      &:first-child {
+         padding: 0 0 10px 0;
+      }
+      &:last-child {
+         padding-top: 10px;
+      }   
+   }
+}
+.price__row-title {
+   color: rgb(0, 0, 0);
+   @include adaptiveFont(30, 18); 
+   font-weight: 500;
+   line-height: 140%;
+   letter-spacing: 0%;
+   text-align: left;
+   @media screen and (max-width: 1140px) {
+      font-size: 20px;
+   }
+   @media screen and (max-width: 570px) {
+      font-size: 18px;
+   }
+   @media screen and (max-width: 280px) {
+      font-size: 14px;
+   }
+}
+.price__row-tag {
+   color: rgb(255, 255, 255);
+   @include adaptiveFont(30, 18); 
+   font-weight: 600;
+   line-height: 140%;
+   letter-spacing: 0%;
+   text-align: left;
+   padding: 10px 20px 10px 30px;
+   border-radius: 62px;
+   background: rgb(188, 120, 117);
+   @media screen and (max-width: 1140px) {
+      padding: 10px 20px 10px 25px;
+      font-size: 20px;
+   }
+   @media screen and (max-width: 570px) {
+      font-size: 18px;
+   }
+   @media screen and (max-width: 280px) {
+      font-size: 14px;
+   }
+}
+.price__row-span {
+   color: rgb(148, 80, 77);
+   @include adaptiveFont(18, 12); 
+   font-weight: 500;
+   line-height: 140%;
+   letter-spacing: 0%;
+   text-align: left;
+   @media screen and (max-width: 1140px) {
+      font-size: 14px;
+   }
+   @media screen and (max-width: 570px) {
+      font-size: 12px;
+   }
+}
+.price__row-wrapper {
+   display: flex;
+   flex-direction: column;
+}
+.price__images-arrow {
+   cursor: pointer;
+}

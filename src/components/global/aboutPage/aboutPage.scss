@@ -1,0 +1,122 @@
+@import '../../../styles/variables.scss';
+
+.about__cards {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-areas: 
+   'certificate education photo about'
+   'profile profile photo about'
+   'peculiarities peculiarities photo about'
+   ;
+   gap: 40px;
+   @media screen and (max-width: 1140px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      'photo about'
+      'certificate education'
+      'profile profile'
+      'peculiarities peculiarities'
+      ;
+      gap: 20px;
+   }
+   @media screen and (max-width: 500px) {
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      'photo'
+      'about'
+      'certificate'
+      'education'
+      'profile'
+      'peculiarities'
+      ;
+      gap: 25px;
+      .about__card {
+         &:nth-child(6) {
+            .about__card-subtitle {
+               width: 100%; 
+            }  
+         }
+      }
+   }
+}
+.about__card {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 20px;
+   @media screen and (max-width: 1140px) {
+      gap: 15px;
+   }
+   @media screen and (max-width: 500px) {
+      gap: 10px;
+   }
+}
+.card-0 {
+   grid-area: certificate;
+}
+.card-1 {
+   grid-area: education;
+}
+.card-2 {
+   grid-area: photo;
+   border-radius: 35px;
+   background: rgb(228, 181, 165);
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+.card-3 {
+   grid-area: profile;
+}
+.card-4 {
+   grid-area: about;
+   display: flex;
+   justify-content: center;
+   @media screen and (max-width: 1140px) {
+      width: 90%;
+   }
+   @media screen and (max-width: 500px) {
+      width: 100%;
+   }
+}
+.card-5 {
+   grid-area: peculiarities;
+}
+.about__card-img {
+   width: 100%;
+}
+.about__card-title-h {
+   color: rgb(148, 80, 77);
+   @include adaptiveFont(35, 12); 
+   font-weight: 600;
+   line-height: 140%;
+   letter-spacing: 0%;
+   text-align: left;
+   @media screen and (max-width: 1140px) {
+      font-size: 25px;
+   }
+   @media screen and (max-width: 500px) {
+      font-size: 18px;
+   }
+}
+.about__card-subtitle {
+   @media screen and (max-width: 500px) {
+      width: 96%;
+   } 
+}
+.about__card-subtitle-p {
+   color: rgb(0, 0, 0);
+   @include adaptiveFont(22, 12); 
+   font-weight: 400;
+   line-height: 33px;
+   letter-spacing: 0%;
+   text-align: left;
+   @media screen and (max-width: 1140px) {
+      font-size: 18px;
+      line-height: 27px;
+   }
+   @media screen and (max-width: 500px) {
+      font-size: 16px;
+      line-height: 24px;
+   }
+}

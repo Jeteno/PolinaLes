@@ -1,0 +1,42 @@
+.logo__container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 14px;
+}
+.logo__link {
+   padding-right: 14px;
+   border-right: 1px solid;
+   display: flex;
+   @media screen and (max-width: 550px) {
+      border-right: none;
+   }
+}
+.logo__title {
+   @media screen and (max-width: 550px) {
+      display: none;
+   }
+}
+.logo__title-h {
+   color: rgb(0, 0, 0);
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 25px;
+   letter-spacing: 0%;
+   text-align: left;
+   @media screen and (max-width: 1140px) {
+      font-size: 15px;
+   }
+}
+.logo__svg {
+   @media screen and (max-width: 1140px) {
+      width: 158px;
+      height: 40px;
+   }
+   @media screen and (max-width: 500px) {
+      width: 143px;
+   }
+   @media screen and (max-width: 320px) {
+      width: 100px;
+   }
+}

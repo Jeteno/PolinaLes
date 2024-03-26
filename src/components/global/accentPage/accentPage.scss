@@ -1,0 +1,166 @@
+@import '../../../styles/variables.scss';
+
+.accent__cards {
+   .accent__card {
+      &:nth-child(1) {
+         padding-right: 45px;
+         @media screen and (max-width: 500px) {
+            padding-right: 15px;
+         }
+      }
+      &:nth-child(2) {
+         padding-right: 93px;
+         @media screen and (max-width: 1140px) {
+            padding-right: 21px;
+         }
+         @media screen and (max-width: 500px) {
+            padding-right: 15px;
+         }
+      }
+      &:nth-child(3) {
+         padding-right: 53px;
+         @media screen and (max-width: 500px) {
+            padding-right: 15px;
+         }
+      }
+      &:nth-child(4) {
+         @media screen and (max-width: 500px) {
+            padding-right: 15px;
+         }
+      }
+      &:nth-child(5) {
+         @media screen and (max-width: 500px) {
+            padding-right: 15px;
+         }
+      }
+      &:nth-child(6) {
+         @media screen and (max-width: 1140px) {
+            padding-right: 25px;
+         }
+      }
+   }
+   .accent__card {
+      &:nth-child(5) {
+         .accent__card-subtitle {
+            width: 80%; 
+            @media screen and (max-width: 1140px) {
+               width: 90%;
+            }
+         }  
+      }
+   }
+   .accent__card {
+      &:nth-child(6) {
+         .accent__card-subtitle {
+            width: 90%; 
+            @media screen and (max-width: 550px) {
+               width: 100%;
+            }
+         }  
+      }
+   }
+   @media screen and (max-width: 1140px) {
+      .accent__card {
+         &:nth-child(4) {
+            .accent__card-subtitle {
+               width: 84%; 
+            }  
+         }
+      }
+   }
+   @media screen and (max-width: 550px) {
+      .accent__card {
+         &:nth-child(4) {
+            .accent__card-subtitle {
+               width: 93%; 
+            }  
+         }
+      }
+   }
+}
+.accent__card {
+   border: 1px solid rgb(188, 120, 117);
+   background-color: inherit;
+   position: relative;
+   flex: 1 1 30%;
+   align-items: flex-start;
+   padding-top: 53px;
+   padding-left: 53px;
+   padding-bottom: 53px;
+   @media screen and (max-width: 1140px) {
+      flex: 1 1 48%;
+      padding-top: 30px;
+      padding-left: 21px;
+      padding-bottom: 32px;
+      min-height: 235px;
+   }
+   @media screen and (max-width: 570px) {
+      flex: 1 1 auto;
+      padding-left: 15px;
+      min-height: 186px;
+   }
+}
+.accent__card-span {
+   position: absolute;
+   z-index: 1;
+   top: -19px;
+   left: 22px;
+   color: rgba(252, 229, 221, 0.4);
+   @include adaptiveFont(130, 12); 
+   font-weight: 600;
+   line-height: 140%;
+   letter-spacing: 0%;
+   text-align: left;
+   @media screen and (max-width: 1140px) {
+      font-size: 100px;
+      left: 8px;
+      top: -29px;
+   }
+   @media screen and (max-width: 500px) {
+      font-size: 80px;
+      top: -20px;
+   }
+}
+.accent__card-content {
+   position: relative;
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   @media screen and (max-width: 1140px) {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+   }
+   @media screen and (max-width: 500px) {
+      gap: 10px;
+   }
+}
+.accent__card-title-h {
+   color: rgb(148, 80, 77);
+   @include adaptiveFont(35, 12); 
+   font-weight: 600;
+   line-height: 140%;
+   letter-spacing: 0%;
+   text-align: left;
+   @media screen and (max-width: 500px) {
+      font-size: 20px;
+   }
+}
+.accent__card-subtitle {
+   width: 93%;
+   @media screen and (max-width: 500px) {
+      width: 100%;
+   }
+}
+.accent__card-subtitle-p {
+   color: rgb(0, 0, 0);
+   @include adaptiveFont(22, 12); 
+   font-weight: 400;
+   line-height: 140%;
+   letter-spacing: 0%;
+   text-align: left;
+   @media screen and (max-width: 500px) {
+      font-size: 16px;
+   }
+}

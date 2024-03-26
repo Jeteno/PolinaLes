@@ -1,0 +1,298 @@
+@import '../../../styles/variables.scss';
+.target__cards {
+   .target__card{
+      @media screen and (max-width: 1140px) {
+         &:nth-child(1) {
+            order: 1;
+         }      
+         &:nth-child(2) {
+            order: 3;
+         }      
+         &:nth-child(3) {
+            order: 2;
+         }
+         &:nth-child(4) {
+            order: 4;
+            padding-bottom: 27px;
+         }
+      }
+      @media screen and (max-width: 570px) {
+         &:nth-child(1) {
+            order: 1;
+         }      
+         &:nth-child(2) {
+            order: 3;
+         }      
+         &:nth-child(3) {
+            order: 2;
+         }
+         &:nth-child(4) {
+            order: 4;
+         }
+      }
+   }
+   @media screen and (max-width: 570px) {
+      .target__card {
+         &:nth-child(3) {
+            .target__card-content-subtitle {
+               width: 88%;
+            }
+         }
+         &:nth-child(4) {
+            .target__card-content-subtitle {
+               width: 84%;
+            }
+         }
+      }
+   }
+}
+.target__card {
+   position: relative;
+   border-radius: 35px;
+   background: rgb(188, 120, 117);
+   flex: 1 1 33%;
+   overflow: hidden;
+   align-items: flex-start;
+   padding: 52px 42px 72px 295px;
+   @media screen and (max-width: 1900px) {
+      padding: 42px 40px 40px 240px;
+   }
+   @media screen and (max-width: 1280px) {
+      padding: 42px 40px 40px 220px;
+   }
+   @media screen and (max-width: 1140px) {
+      padding: 32px 49px 35px 272px;
+      flex: 1 1 auto;
+      min-height: 210px;
+      &:nth-child(1){
+         padding: 32px 15px 35px 272px;
+      }
+      &:nth-child(3){
+         padding: 32px 35px 35px 272px;
+      }
+      &:nth-child(4){
+         padding: 32px 75px 35px 272px;
+      }
+   }
+   @media screen and (max-width: 570px) {
+      min-height: 185px;
+      &:nth-child(1){
+         padding: 20px 20px 20px 20px;
+      }
+      &:nth-child(2){
+         padding: 20px 20px 20px 20px;
+      }
+      &:nth-child(3){
+         padding: 20px 20px 20px 20px;
+      }
+      &:nth-child(4){
+         padding: 20px 20px 20px 20px;
+      }
+   }
+   @media screen and (max-width: 280px) {
+      &:nth-child(1){
+         padding: 10px 10px 10px 10px;
+      }
+      &:nth-child(2){
+         padding: 10px 10px 10px 10px;
+      }
+      &:nth-child(3){
+         padding: 10px 10px 10px 10px;
+      }
+      &:nth-child(4){
+         padding: 10px 10px 10px 10px;
+      }
+   }
+}
+.target__card-icon {
+   position: absolute;
+   width: 304px;
+   overflow: hidden;
+}
+.target__card-icon-0 {
+   bottom: -5px;
+   left: -53px;
+   width: 304px;
+   height: 252px;
+   @media screen and (max-width: 1900px) {
+      width: 250px;
+      height: 200px;
+      left: -20px;
+   }
+   @media screen and (max-width: 1280px) {
+      width: 220px;
+      height: 180px;
+   }
+   @media screen and (max-width: 1140px) {
+      width: 252px;
+      height: 209px;
+      left: -10px;
+      bottom: -11px;
+   }
+   @media screen and (max-width: 570px) {
+      width: 133px;
+      height: 111px;
+      opacity: 0.5;
+      left: inherit;
+      right: -25px;
+      top: 93px;   
+   }
+}
+.target__card-icon-1 {
+   top: 38.88px;   
+   left: 14px;
+   width: 224.05px;
+   height: 317.97px;
+   @media screen and (max-width: 1900px) {
+      width: 200px;
+      height: 280px;
+   }
+   @media screen and (max-width: 1280px) {
+      width: 170px;
+      height: 240px;
+   }
+   @media screen and (max-width: 1140px) {
+      width: 173.56px;
+      height: 246.32px;
+      left: 33.75px;
+      top: 18px;
+   }
+   @media screen and (max-width: 570px) {
+      width: 85.12px;
+      height: 120.8px;
+      right: 5px;
+      top: 64px;
+      bottom: 0;
+      left: inherit;
+      opacity: 0.5;
+   }
+}
+.target__card-icon-2 {
+   left: -52px;
+   bottom: 33px;
+   width: 303.8px;
+   height: 219.24px;
+   @media screen and (max-width: 1900px) {
+      width: 270px;
+      height: 190px;
+   }
+   @media screen and (max-width: 1280px) {
+      width: 230px;
+   }
+   @media screen and (max-width: 1140px) {
+      width: 255.46px;
+      height: 184.35px;
+      bottom: 8.65px;
+      left: -12px;
+   }
+   @media screen and (max-width: 570px) {
+      width: 112px;
+      height: 80.83px;
+      left: inherit;
+      right: -48px;
+      bottom: 11px;
+      transform: scaleX(-1);      
+      opacity: 0.5;
+   }
+}
+.target__card-icon-3 {
+   bottom: 49px;
+   left: 7px;
+   width: 245.51px;
+   height: 187px;
+   @media screen and (max-width: 1900px) {
+      width: 220px;
+      height: 180px;
+      bottom: 40px;
+   }
+   @media screen and (max-width: 1280px) {
+      width: 200px;
+      height: 150px;
+   }
+   @media screen and (max-width: 1140px) {
+      width: 227.13px;
+      height: 173px;
+      top: 19px;
+      left: 12px;
+   }
+   @media screen and (max-width: 570px) {
+      width: 135px;
+      height: 102.83px;
+      left: inherit;
+      right: -27px;
+      top: 76px;
+      bottom: 0;
+      opacity: 0.5;
+   }
+}
+.target__card-img {
+   width: 100%;
+}
+.target__card-content {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   @media screen and (max-width: 570px) {
+      gap: 10px;
+   }
+}
+.target__card-content-title {
+   border-radius: 55px;
+   padding: 20px 20px 21px 20px;
+   width: max-content;
+   @media screen and (max-width: 350px) {
+      padding: 10px 15px;
+   }
+}
+.target__card-content-title-h {
+   color: rgb(255, 255, 255);
+   @include adaptiveFont(35, 20); 
+   font-weight: 600;
+   line-height: 110%;
+   letter-spacing: 0%;
+   text-align: left;
+   @media screen and (max-width: 1900px) {
+      font-size: 30px;
+   }
+   @media screen and (max-width: 1280px) {
+      font-size: 25px;
+   }
+   @media screen and (max-width: 570px) {
+      font-size: 20px;
+   }
+   @media screen and (max-width: 320px) {
+      font-size: 18px;
+   }
+   @media screen and (max-width: 280px) {
+      font-size: 16px;
+   }
+}
+.target__card-content-subtitle {
+   @media screen and (max-width: 570px) {
+      position: relative;
+      z-index: 2;
+      width: 94%;
+   }
+}
+.target__card-content-subtitle-p {
+   color: rgb(255, 255, 255);
+   @include adaptiveFont(22, 16); 
+   font-weight: 500;
+   line-height: 150%;
+   letter-spacing: 0%;
+   text-align: left;
+   @media screen and (max-width: 1900px) {
+      font-size: 20px;
+   }
+   @media screen and (max-width: 1140px) {
+      font-size: 18px;
+      line-height: 27px;
+   }
+   @media screen and (max-width: 570px) {
+      font-size: 16px;
+      line-height: 24px;
+   }
+   @media screen and (max-width: 280px) {
+      font-size: 14px;
+   }
+}

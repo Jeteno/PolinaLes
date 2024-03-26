@@ -1,0 +1,116 @@
+.price__popap-wrapper {
+   position: absolute;
+   z-index: 9999;
+   width: 75%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 60px;
+   background: rgb(252, 229, 221);
+   padding: 103px 157px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   @media screen and (max-width: 1140px) {
+      width: 80.6%;
+      padding: 38px 45px 34px 45px;
+      border-radius: 30px;
+
+   }
+   @media screen and (max-width: 500px) {
+      border-radius: 12px;
+      width: 100%;
+      padding: 27px 45px 25px 45px;
+   }
+}
+.price__popup-cards {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+}
+.price__popup-card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   @media screen and (max-width: 1140px) {
+      gap: 0;
+   }
+}
+
+.price__popup-card--title {
+   color: rgb(148, 80, 77);
+   font-size: 30px;
+   font-weight: 500;
+   line-height: 140%;
+   letter-spacing: 0%;
+   text-align: left;
+   @media screen and (max-width: 1140px) {
+      font-size: 22px;
+   }
+   @media screen and (max-width: 500px) {
+      font-size: 12px;
+   }
+}
+.popup__button-span {
+   position: fixed;
+   width: 28.75px;
+   height: 28.75px;
+   top: 50px;
+   right: 50px;
+   cursor: pointer;
+   &::after {
+      content: '';
+      height: 28.75px;
+      width: 3px;
+      background: rgb(148, 80, 77);
+      border-radius: 10px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+      @media screen and (max-width: 500px) {
+         height: 21.56px;
+         width: 3px;
+      }
+   }
+   &::before {
+      content: '';
+      width: 28.75px;
+      height: 3px;
+      background: rgb(148, 80, 77);
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      @media screen and (max-width: 500px) {
+         width: 21.56px;
+         height: 3px;
+      }
+   }
+   @media screen and (max-width: 1140px) {
+      top: 15px;
+      right: 15px;
+   }
+   @media screen and (max-width: 500px) {
+      width: 21.56px;
+      height: 21.56px;   
+      top: 6px;
+      right: 6px;
+   }
+}
+
+.popap__svg {
+   width: 201.25px;
+   height: 201.25px;
+   @media screen and (max-width: 1140px) {
+      width: 98.91px;
+      height: 98.91px;
+   }
+   @media screen and (max-width: 500px) {
+      width: 49.76px;
+      height: 49.76px;
+   }
+}

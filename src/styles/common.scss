@@ -1,0 +1,140 @@
+#root {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+.wrapper{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.main {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 150px;
+   @media screen and (max-width: 1900px) {
+      gap: 120px;
+   }
+   @media screen and (max-width: 1140px) {
+      gap: 100px;
+   }
+   @media screen and (max-width: 500px) {
+      gap: 50px;
+   }
+}
+.page {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   position: relative;
+}
+.container{
+   width: 89.2%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   @media screen and (max-width: 1900px) {
+      width: 95%;
+   }
+   @media screen and (max-width: 1140px) {
+      width: 91.2%;
+   }
+}
+.body {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   position: relative;
+}
+.body__page {
+   flex-direction: column;
+   gap: 80px;
+   @media screen and (max-width: 1900px) {
+      gap: 65px;
+   }
+   @media screen and (max-width: 1140px) {
+      gap: 50px;
+   }
+   @media screen and (max-width: 500px) {
+      gap: 25px;
+   }
+}
+.title__page {
+   color: rgb(0, 0, 0);
+   @include adaptiveFont(50, 20); 
+   font-weight: 600;
+   line-height: 110%;
+   letter-spacing: 0%;
+   text-align: left;
+   @media screen and (max-width: 1140px) {
+      font-size: 35px;
+   }
+   @media screen and (max-width: 500px) {
+      font-size: 20px;
+   }
+}
+.cards {
+   display: flex;
+   justify-content: space-between;
+   gap: 40px;
+   flex-wrap: wrap;
+   align-items: stretch;
+   @media screen and (max-width: 1900px) {
+      gap: 25px;
+   }
+   @media screen and (max-width: 1140px) {
+      gap: 20px;
+   }
+   @media screen and (max-width: 500px) {
+      gap: 16px;
+   }
+}
+.card {
+   display: flex;
+   gap: 20px;
+   border-radius: 30px;
+   @media screen and (max-width: 1140px) {
+      border-radius: 25px;
+   }
+   @media screen and (max-width: 500px) {
+      border-radius: 20px;
+   }
+}
+.mask__style {
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   color: rgb(255, 255, 255);
+   @include adaptiveFont(35, 18); 
+   font-weight: 600;
+   letter-spacing: 0%;
+   text-align: left;
+   background: rgb(228, 181, 165);
+   @media screen and (max-width: 500px) {
+      line-height: 25px;
+   }
+   @media screen and (max-width: 320px) {
+      padding: 10px 15px;
+      font-size: 16px;
+   }
+}
+.backdrop {
+   &::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); 
+      z-index: 100;
+   }
+}
+.popap__open {
+   overflow: hidden;
+}
