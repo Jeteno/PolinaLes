@@ -54,7 +54,7 @@ function PricePage({ popupState, togglePopup }: ChildComponentProps) {
       priceThreeTitle: '650 ₽/чел',
    },
    {
-      img: '../../../../public/img/price/arrow.svg'
+      img: '../../../../../img/price/arrow.svg'
    }
    ])
 
