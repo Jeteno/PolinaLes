@@ -7,16 +7,18 @@
    background-position: right;
    background-repeat: no-repeat;
    background-size: cover;
+   @media screen and (max-width: 1440px) {
+      background-position: 52px;
+   }
    @media screen and (max-width: 1280px) {
-      background-position: center;
+      background-position: -60px;
    }
    @media screen and (max-width: 1200px) {
-      background-position: left;
+      background-position: center;
       border-radius: 45px;
    }
-   @media screen and (max-width: 1140px) {
-      background-position: top;
-      // background-position: -160px -250px;
+   @media screen and (max-width: 1190px) {
+      background-position: 58px;
    }
    @media screen and (max-width: 1024px) {
       background-position: 460px;
